@@ -6,10 +6,14 @@ distributes an archive to the web servers
 execute: fab -f 3-deploy_web_static.py deploy -i ~/.ssh/id_rsa -u ubuntu
 """
 
+<<<<<<< HEAD
+env.hosts = ["54.162.2.103", "100.26.168.64"]
+=======
 from fabric.api import env, local, put, run
 from datetime import datetime
 from os.path import exists, isdir
 env.hosts = ['54.162.2.103', '100.26.168.64']
+>>>>>>> 2a48be0fecf8e8649aaf45fb44ecd167f86074fc
 
 
 def do_pack():
